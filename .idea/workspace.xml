@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71d82abe-0896-4625-b098-1db4646db093" name="Changes" comment="" />
+    <list default="true" id="71d82abe-0896-4625-b098-1db4646db093" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/TP_SOA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TP_SOA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_app/data/clientAppInit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_app/data/test.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services_app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/services_app/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2GsJPSE7DzUq35EGJJduRZzylJr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -20,12 +42,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/M2 -- DATASCALE/ARCHI ORIENTÉ SERVICES/PROJECTS/TP_SOA",
+    "last_opened_file_path": "D:/M2 -- DATASCALE/ARCHI ORIENTÉ SERVICES/PROJECTS/TP_SOA/services_app",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\M2 -- DATASCALE\ARCHI ORIENTÉ SERVICES\PROJECTS\TP_SOA\services_app" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\M2 -- DATASCALE\ARCHI ORIENTÉ SERVICES\PROJECTS\TP_SOA\services_app" />
     </key>
@@ -39,11 +64,22 @@
       <option name="presentableId" value="Default" />
       <updated>1667171333426</updated>
       <workItem from="1667171334666" duration="118000" />
-      <workItem from="1667228955924" duration="1714000" />
+      <workItem from="1667228955924" duration="3708000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
