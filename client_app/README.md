@@ -80,7 +80,7 @@ La structure de l'application est la suivante:
 ```
 - utils: contient les fonctions utilitaires utilisées dans l'application client.
 
-> get_client: permet de créer un client SOAP à partir des urls du WSDL, du service et de la méthode.
+> [get_client](./loan_approval_client/utils/helpers.py#L15): permet de créer un client SOAP à partir des urls du WSDL, du service et de la méthode.
 >> On initialise un client SOAP à partir du WSDL du service et de la méthode à appeler.(Ici on l'a fait asynchrone)
 
 ```python
@@ -105,7 +105,7 @@ def get_client(wsdl_url, method_url, service_url):
     return client, header_value
 ```
 - ClientApp.py: contient la classe ClientApp qui permet de gérer l'application client.
-> init: initialise les attributs de la classe.
+> [init](./loan_approval_client/ClientApp.py#L14): initialise les attributs de la classe.
 
 ```python
     def __init__(self, wsdl_url, method_url, service_url):
@@ -115,30 +115,67 @@ def get_client(wsdl_url, method_url, service_url):
         self.client, self.header_value = get_client(self.wsdl_url, self.method_url, self.service_url)
 ```
 
-> checkSolvability: permet de vérifier la solvabilité d'un utilisateur.
+> [checkSolvability](./loan_approval_client/ClientApp.py#L21): permet de vérifier la solvabilité d'un utilisateur.
 >> Ici on a utilisé asyncio pour effectuer les appels en asynchrones (Ce n'est évidemment pas obligatoire).
 >><br/> Le timer est un décorateur qui permet de mesurer le temps d'exécution de la fonction.
 
 ```python
-    @timer
-    def checkSolvability(self, user):
-        loop = asyncio.get_event_loop()
-        result = self.client.service.checkSolvability(
-            user=json.loads(json.dumps(user.__dict__, cls=ComplexEncoder)),
-            _soapheaders=[self.header_value]
-        )
-        task = [result]
-        future = asyncio.gather(*task, return_exceptions=True)
-        loop.run_until_complete(future)
-        loop.run_until_complete(self.client.transport.aclose())
-        print("***************** Réponse: ******************\n", future.result()[0])
-        print("-" * 42)
-        return future.result()[0]
+@timer
+def checkSolvability(self, user):
+    loop = asyncio.get_event_loop()
+    result = self.client.service.checkSolvability(
+        user=json.loads(json.dumps(user.__dict__, cls=ComplexEncoder)),
+        _soapheaders=[self.header_value]
+    )
+    task = [result]
+    future = asyncio.gather(*task, return_exceptions=True)
+    loop.run_until_complete(future)
+    loop.run_until_complete(self.client.transport.aclose())
+    print("***************** Réponse: ******************\n", future.result()[0])
+    print("-" * 42)
+    return future.result()[0]
 ```
 
->appraise: permet de verifier si l'Appart est éligible à un prêt 
+>[appraise](./loan_approval_client/ClientApp.py#L35): permet de verifier si l'Appart est éligible à un prêt 
 >> Pareil on a utilisé asyncio
+
+```python
+@timer
+def appraise(self, loan):
+    loop = asyncio.get_event_loop()
+    result = self.client.service.appraise(
+        loan=json.loads(json.dumps(loan.__dict__, cls=ComplexEncoder)),
+        _soapheaders=[self.header_value]
+    )
+    task = [result]
+    future = asyncio.gather(*task, return_exceptions=True)
+
+    loop.run_until_complete(future)
+    loop.run_until_complete(self.client.transport.aclose())
+    print("-" * 42)
+    print("***************** Réponse: ******************\n", future.result()[0])
+    print("-" * 42)
+    return future.result()[0]
+```
+
 - model: contient les classes qui représentent les différents objets utilisés dans l'application client.
+> [User](./loan_approval_client/model/User.py#L5): représente un utilisateur.
+
+```python
+class User:
+    def __init__(self, name="", num_ssn="", email="", address=Address()):
+        self.name = name
+        self.num_ssn = num_ssn
+        self.address = address
+        self.email = email
+
+    def reprJSON(self):
+        return dict(name=self.name, num_ssn=self.num_ssn, email=self.email, address=self.address.reprJSON())
+```
+. 
+.
+.
+Pareil pour les autres classes.
 
 Vous pouvez lancer l'application en exécutant la commande suivante:
 ```bash
