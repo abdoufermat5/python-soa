@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71d82abe-0896-4625-b098-1db4646db093" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/services_app/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SOA.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_app/loan_approval_client/ClientApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/client_app/loan_approval_client/ClientApp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_app/loan_approval_client/model/Address.py" beforeDir="false" afterPath="$PROJECT_DIR$/client_app/loan_approval_client/model/Address.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_app/loan_approval_client/model/Apartment.py" beforeDir="false" afterPath="$PROJECT_DIR$/client_app/loan_approval_client/model/Apartment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_app/loan_approval_client/model/Loan.py" beforeDir="false" afterPath="$PROJECT_DIR$/client_app/loan_approval_client/model/Loan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_app/loan_approval_client/model/User.py" beforeDir="false" afterPath="$PROJECT_DIR$/client_app/loan_approval_client/model/User.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_app/loan_approval_client/utils/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/client_app/loan_approval_client/utils/helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services_app/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/services_app/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services_app/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/services_app/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services_app/services/credit_check/CreditCheckService.py" beforeDir="false" afterPath="$PROJECT_DIR$/services_app/services/credit_check/CreditCheckService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services_app/services/loan_approval/LoanApprovalService.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services_app/services/loan_approval/__init__.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +63,7 @@
       <workItem from="1667236448517" duration="757000" />
       <workItem from="1667250139679" duration="18000" />
       <workItem from="1667923184001" duration="119000" />
-      <workItem from="1667949200533" duration="81000" />
+      <workItem from="1667949200533" duration="724000" />
     </task>
     <servers />
   </component>
