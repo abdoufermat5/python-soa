@@ -10,6 +10,7 @@ twisted = "*"
 lxml = "==4.7.0"
 twisted-iocpsupport = "==1.0.0"
 spyne = "*"
+sqlalchemy = "*"
 
 [dev-packages]
 

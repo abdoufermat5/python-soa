@@ -21,6 +21,6 @@ class CreditCheckService(ServiceBase):
     def checkSolvability(user):
         print("User: ", user)
         if str(user.num_ssn)[0] == '6':
-            return f"{user.name} habitant à l'adresse {user.address.street} est solvable"
+            return f"Approved"
         else:
-            return f"{user.name} habitant à l'adresse {user.address.street} n'est pas solvable"
+            return f"Denied"

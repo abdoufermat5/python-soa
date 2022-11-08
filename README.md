@@ -1,3 +1,3 @@
 # python-soa
 
-![image](./SOA.png)
+![image](./assets/Architecture.png)
